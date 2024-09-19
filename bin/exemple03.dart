@@ -11,10 +11,14 @@ void main(List<String> arguments) {
   }
 
   // b. Mostri la progressió numèrica des de la segona variable fins a 0 amb un bucle while.
-  print('Progresión de números desde 0 hasta $value2:');
+  print('Progresión de números desde $value2 hasta 0:');
   double j = 0;
-  while (j < value2) {
-    j++;
-    print(j);
+  while (j <= value2) {
+    value2--;
+    if (value2 < 0) {
+      print(j);
+    } else {
+      print(value2);
+    }
   }
 }
