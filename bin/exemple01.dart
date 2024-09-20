@@ -1,3 +1,5 @@
+import 'dart:math';
+
 double calculateAreaTriangle(double base, double height) {
   return (base * height) / 2;
 }
@@ -13,11 +15,13 @@ void main(List<String> arguments) {
   // ii. Triangle B: base 1.75 i altura 5.43.
 
   double triangleA = calculateAreaTriangle(2.25, 8.72);
-  double triangleB = calculateAreaTotal(1.75, 5.43);
+  double triangleB = calculateAreaTriangle(1.75, 5.43);
 
   // b. Has de tenir en compte el tipus de les variables.
   // i. ¿Quina llibreria has fet servir?
+  // dart:math
   // ii. ¿Com la has inclòs en el teu codi?
+  // S'inclou amb import 'dart:math'
 
   // c. Mostra per consola el valor de les dos àrees.
 
