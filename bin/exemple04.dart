@@ -16,7 +16,7 @@ void main(List<String> arguments) {
 
   // c. Mostri per pantalla els números que siguin imparells.
 
-  print('Números imparells de la llista');
+  print('Números imparells de la llista:');
   myList.forEach((element) {
     if (element % 2 != 0) {
       print(element);
